@@ -6,11 +6,10 @@ import './Meals.css';
 
 interface MealType {
     Name: string;
-    Protein: string;
+    Protein: number;
     Carbs: number;
     Fats: number;
 }
-//   <MealCard name={meal.Name} protein={meal.Protein} carbs={meal.Carbs} fats={meal.Fats} fetchMeals={fetchMeals}></MealCard>
 
 function Meals() {
 
@@ -39,8 +38,21 @@ function Meals() {
                 <Stack spacing={2}>
                     {
                         meals.map((meal: MealType) => (
+                              <MealCard Name={meal.Name} Protein={meal.Protein} Carbs={meal.Carbs} Fats={meal.Fats}></MealCard>
+                        ))
+                    }
+                </Stack>
+                </div>
 
-                            <Card sx={{ minWidth: 275 }} >
+            </MealsContext.Provider>
+        </div>
+    )
+
+}
+
+function MealCard(meal: MealType){
+    return (
+        <Card sx={{ minWidth: 275 }} >
                                 <CardContent>
                                     <Typography variant="h5" component="div">
                                         {meal.Name}
@@ -55,19 +67,7 @@ function Meals() {
                                     </Typography>
                                 </CardContent>
                             </Card>
-
-
-                        ))
-                    }
-
-
-                </Stack>
-                </div>
-
-            </MealsContext.Provider>
-        </div>
     )
-
 }
 
 export default Meals;

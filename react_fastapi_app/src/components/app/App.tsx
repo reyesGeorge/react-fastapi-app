@@ -20,7 +20,6 @@ const {meals, fetchMeals} = React.useContext(MealsContext)
 // # Handle the Submit event
 const handleSubmit = (e: any) => {
   e.preventDefault();
-  console.log(name, protein, carbs, fats);
   const newMeal = {
     "Name": name,
     "Protein": protein,
@@ -33,6 +32,11 @@ const handleSubmit = (e: any) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newMeal)
   }).then(fetchMeals)
+
+  setName("");
+  setProtein("");
+  setCarb("");
+  setFats("");
 }
 
 
