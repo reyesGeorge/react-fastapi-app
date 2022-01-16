@@ -4,6 +4,6 @@ fastapi/app/__pycache__
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-react_fastapi/node_modules/
+react_fastapi_app/node_modules/
 
 
