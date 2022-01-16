@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Cd into the `React` project directory called react-fastapi-app, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -14,6 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 In a new terminal cd into the `FastAPI` project directory called fastapi, you can run:
 
+### `pip install -r requirements.txt`
 ### `python main.py`
 
 Runs the app in the development mode.\
