@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .height {
+    height: 40vh;
+  }
+  .height2 {
+    height: 20vh;
+  }
+  .height3 {
+    height: 10vh;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    display: flex;
+    justify-content: right;
+  }
+  .leftPadding {
+    padding-left: 4vh;
+  }
+  .rightPadding {
+    padding-right: 10vh;
+  }
+  
