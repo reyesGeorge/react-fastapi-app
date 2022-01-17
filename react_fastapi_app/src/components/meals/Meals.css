@@ -4,3 +4,15 @@
 .height2 {
     height: 20vh;
   }
+.horiz {
+  display: flex;
+  justify-content: space-between;
+}
+.cardC {
+  width: 50%;
+  margin-bottom: 1vh;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
