@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
 }
+.wid {
+  width: 40.5%;
+}
 .height {
   height: 40vh;
 }

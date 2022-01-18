@@ -53,13 +53,13 @@ const handleSubmit = (e: any) => {
         </div>
         <form onSubmit={handleSubmit}>
         <div className='center'>
-        <TextField className="height3" id="outlined-basic" label="Name of Food" variant="outlined" value={name} onChange={e => setName(e.target.value)} required/>
+        <TextField className="height3 wid" id="outlined-basic" type="text" label="Name of Food" variant="outlined" value={name} onChange={e => setName(e.target.value)} required/>
       </div>
       <div className='center'>
         
-        <TextField id="outlined-basic" label="Protein (g)" variant="outlined" value={protein} onChange={e => setProtein(e.target.value)} required/>
-        <TextField id="outlined-basic" label="Carbs (g)" variant="outlined" value={carbs} onChange={e => setCarb(e.target.value)} required/>
-        <TextField id="outlined-basic" label="Fat (g)" variant="outlined" value={fats} onChange={e => setFats(e.target.value)} required/>
+        <TextField id="outlined-basic" type="number" label="Protein (g)" variant="outlined" value={protein} onChange={e => setProtein(e.target.value)} required/>
+        <TextField id="outlined-basic" type="number" label="Carbs (g)" variant="outlined" value={carbs} onChange={e => setCarb(e.target.value)} required/>
+        <TextField id="outlined-basic" type="number" label="Fat (g)" variant="outlined" value={fats} onChange={e => setFats(e.target.value)} required/>
         
 
       </div>
