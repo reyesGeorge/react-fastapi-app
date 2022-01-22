@@ -6,13 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Meals from './components/meals/Meals';
 import App from './components/app/App';
+import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<App />}/>
+
+        {/* <Route path="/" element={<App />}/> */}
+        <Route path="/" element={<Login />}/>
+        <Route path="signup" element={<Signup />}/>
+
           <Route path="meals" element={<Meals />} />
+          <Route path="home" element={<App />} />
+
           {/* <Route path="dashboard" element={<Dashboard />} /> */}
 
           {/* Using path="*"" means "match anything", so this route

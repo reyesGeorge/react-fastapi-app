@@ -6,15 +6,11 @@ import Header from '../header/Header';
 
 function App() {
 
-const MealsContext = React.createContext({
-    meals: [], fetchMeals: () => { }
-})
 // # Handle the state for the form inputs
 const [name, setName] = React.useState('');
 const [protein, setProtein] = React.useState('');
 const [carbs, setCarb] = React.useState('');
 const [fats, setFats] = React.useState('');
-const {meals, fetchMeals} = React.useContext(MealsContext)
 
 
 // # Handle the Submit event
@@ -31,7 +27,7 @@ const handleSubmit = (e: any) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newMeal)
-  }).then(fetchMeals)
+  });
 
   setName("");
   setProtein("");
@@ -53,7 +49,7 @@ const handleSubmit = (e: any) => {
         </div>
         <form onSubmit={handleSubmit}>
         <div className='center'>
-        <TextField className="height3 wid" id="outlined-basic" type="text" label="Name of Food" variant="outlined" value={name} onChange={e => setName(e.target.value)} required/>
+        <TextField className="height3 wid2" id="outlined-basic" type="text" label="Name of Food" variant="outlined" value={name} onChange={e => setName(e.target.value)} required/>
       </div>
       <div className='center'>
         

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Button } from '@mui/material/';
-import { Link } from "react-router-dom";
+import './Header.css';
 
 
 function Header(){
@@ -10,9 +10,10 @@ function Header(){
         <AppBar>
           
           <div className="header">
-            <h1 className="leftPadding">Fast Meals</h1>
+            {/* <h1 className="leftPadding">Fast Meals</h1> */}
+            <Button href="/" color="inherit"><h1>Fast Meals</h1></Button>
             <div className="links rightPadding">
-            <Button href="/" color="inherit"><h3>Add Meals</h3></Button>
+            <Button href="/home" color="inherit"><h3>Add Meals</h3></Button>
             
             <Button href="/meals" color="inherit"><h3>View Meals</h3></Button>
             
