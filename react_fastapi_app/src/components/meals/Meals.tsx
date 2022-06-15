@@ -16,7 +16,7 @@ function Meals() {
 
     const [meals, setMeals] = React.useState([])
     const fetchMeals = async () => {
-        const response = await fetch("http://localhost:8000/meals")
+        const response = await fetch("http://0.0.0.0:8000/meals")
         const meals = await response.json()
         setMeals(meals.data)
         console.log(meals.data)

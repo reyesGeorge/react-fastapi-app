@@ -23,7 +23,7 @@ const handleSubmit = (e: any) => {
     "Fats": fats
   }
 
-  fetch("http://localhost:8000/meals", {
+  fetch("http://0.0.0.0:8000/meals", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newMeal)

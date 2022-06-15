@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  reactfastapi:
+    build: ./react_fastapi_app
+    container_name: react_fastapi_app
+    volumes:
+      - ./react_fastapi_app:/src
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+  
+  fastapi:
+    build: ./fastapi
+    container_name: fastapi
+    volumes:
+      - ./fastapi:/app
+    ports:
+      - "8000:8000"
