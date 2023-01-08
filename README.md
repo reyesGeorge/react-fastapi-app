@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 In a new terminal cd into the `FastAPI` project directory called fastapi, you can run:
 
 ### `pip install -r requirements.txt`
-### `python main.py`
+### `python main2.py`
 
 Runs the app in the development mode.\
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
