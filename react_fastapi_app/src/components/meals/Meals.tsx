@@ -103,9 +103,9 @@ function MealChart(meal: MealType) {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Protein" fill="#FF5733" />
-            <Bar dataKey="Carbs" fill="#FF9633" />
-            <Bar dataKey="Fats" fill="#FF33CE" />
+            <Bar dataKey="Protein" fill="#0A2F51" />
+            <Bar dataKey="Carbs" fill="#0E4D64" />
+            <Bar dataKey="Fats" fill="#137177" />
         </BarChart>
     )
 }
