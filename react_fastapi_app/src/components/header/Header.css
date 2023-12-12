@@ -1,33 +1,20 @@
-a {
+#a-link {
   text-decoration: none;
-  color: white;
 }
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .height {
-    height: 40vh;
-  }
-  .height2 {
-    height: 20vh;
-  }
-  .height3 {
-    height: 10vh;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .links {
-    display: flex;
-    justify-content: right;
-  }
-  .leftPadding {
-    padding-left: 4vh;
-  }
-  .rightPadding {
-    padding-right: 10vh;
-  }
-  
+#a-link:hover {
+  text-decoration: none;
+  color: rgb(0, 99, 204);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.right-padding {
+  padding-right: 5rem;
+}
+.right-padding-2 {
+  padding-right: 3rem;
+}
+.top-padding {
+  padding-top: 1rem;
+}

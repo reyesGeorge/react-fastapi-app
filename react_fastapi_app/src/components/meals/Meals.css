@@ -1,18 +1,23 @@
 .height {
-    margin-top: 12vh;
-  }
-.height2 {
-    height: 20vh;
-  }
-.horiz {
+    margin-top: 6rem;
+}
+.separator {
   display: flex;
   justify-content: space-between;
 }
-.cardC {
+.card-card {
   width: 50%;
   margin-bottom: 1vh;
 }
 .wrap {
   display: flex;
   flex-wrap: wrap;
+}
+.spacer {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
 }

@@ -1,19 +1,9 @@
 .center {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.wid2 {
-  width: 40.5%;
-}
-.height {
-  height: 40vh;
-}
-.height2 {
-  height: 20vh;
-}
-.height3 {
-  height: 10vh;
+.button-height {
+  margin-top: 2rem;
 }
 .header {
   display: flex;
@@ -23,10 +13,18 @@
   display: flex;
   justify-content: right;
 }
-.leftPadding {
-  padding-left: 4vh;
+.bottom-padding {
+  padding-bottom: 1rem;
 }
-.rightPadding {
-  padding-right: 10vh;
+#bottom-margin {
+  margin-bottom: 5rem;
 }
-
+.top-margin {
+  margin-top: 3rem;
+}
+#top-margin {
+  margin-top: 3rem;
+}
+.full-width {
+  width: 100%
+}

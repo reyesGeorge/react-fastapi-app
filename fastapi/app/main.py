@@ -49,4 +49,4 @@ async def get_meals() -> dict:
 @app.post("/meals", tags=["meals"])
 async def post_meals(meal: dict) -> dict:
     meals.append(meal)
-    return {"data": {"We added a meal"}}
+    return {"data": {"Your meal was added!"}}

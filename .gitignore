@@ -1,9 +1,5 @@
-fastapi/rfast/
 fastapi/app/__pycache__
-
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+rfast/
 react_fastapi_app/node_modules/
 
 

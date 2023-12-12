@@ -1,8 +1,11 @@
-import { Card, CardContent, Typography } from '@mui/material';
 import React from 'react';
+
+import { Card, CardContent, Typography } from '@mui/material';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
 import Header from '../header/Header';
 import './Meals.css';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
 
 
 interface MealType {
@@ -13,13 +16,11 @@ interface MealType {
 }
 
 function Meals() {
-
     const [meals, setMeals] = React.useState([])
     const fetchMeals = async () => {
         const response = await fetch("http://0.0.0.0:8000/meals")
         const meals = await response.json()
-        setMeals(meals.data)
-        console.log(meals.data)
+        setMeals(meals.data);
     }
     React.useEffect(() => {
         fetchMeals()
@@ -35,14 +36,16 @@ function Meals() {
             {/* # HEADER COMPONENT */}
             <Header></Header>
             <MealsContext.Provider value={{ meals, fetchMeals }}>
-                <div className="height wrap">
+                <div className="center">
+                    <h1>{"Track your macros"}</h1>
+                </div>
+                <div className="height wrap spacer">
                     {
                         meals.map((meal: MealType) => (
                             <MealCard Name={meal.Name} Protein={meal.Protein} Carbs={meal.Carbs} Fats={meal.Fats}></MealCard>
                         ))
                     }
                 </div>
-
             </MealsContext.Provider>
         </div>
     )
@@ -51,8 +54,8 @@ function Meals() {
 
 function MealCard(meal: MealType) {
     return (
-        <Card className="cardC">
-            <CardContent className="horiz">
+        <Card className="chart-card">
+            <CardContent className="separator">
                 <div>
                     <Typography variant="h5" component="div">
                         {meal.Name}
@@ -68,7 +71,6 @@ function MealCard(meal: MealType) {
                 </div>
                 <div>
                     <MealChart Name={meal.Name} Protein={meal.Protein} Carbs={meal.Carbs} Fats={meal.Fats}></MealChart>
-
                 </div>
             </CardContent>
         </Card>
