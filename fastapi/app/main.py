@@ -14,8 +14,7 @@ meals = [
         "Protein": 11,
         "Carbs": 2,
         "Fats": 4
-    },
-    
+    }
 ]
 
 app = FastAPI()
@@ -38,7 +37,6 @@ app.add_middleware(
 @app.get("/", tags=["root"])
 async def read_root() -> dict:
     return {"message": "Hey this is your sample."}
-
 
 # Our Get method for our meals
 @app.get("/meals", tags=["meals"])

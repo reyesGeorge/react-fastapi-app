@@ -1,5 +1,11 @@
+#height {
+    margin-top: 4rem;
+}
 .height {
-    margin-top: 6rem;
+  margin-top: 3rem;
+}
+.card-bottom-margin {
+  margin-bottom: 10rem;
 }
 .separator {
   display: flex;
@@ -8,14 +14,6 @@
 .card-card {
   width: 50%;
   margin-bottom: 1vh;
-}
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-.spacer {
-  margin-left: 8rem;
-  margin-right: 8rem;
 }
 .center {
   display: flex;

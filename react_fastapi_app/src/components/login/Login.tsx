@@ -14,60 +14,56 @@ function Login() {
                     <h1>{"Fast Meals"}</h1>
                 </Grid>
                 <Grid item xs={1} md={4} />
-                    
+
                 {/* # GRID ROW 2 */}
                 <Grid item xs={1} md={.5} />
-                    
-
                 <Grid item xs={10} md={5.5}>
                     <img src={MealLogo} alt="Meals Logo" />
                 </Grid>
-
                 <Grid item xs={1} md={.5} />
                 <Grid item xs={1} md={.5} />
-                    
-                <Grid item xs={10} md={4} spacing={3} direction="column">
-                    <div className="height2">
-                        <Card>
-                            <CardContent>
-                                <div className="bottom3">
-                                    <Typography variant="h4" component="div">
-                                        {"Sign In"}
-                                    </Typography>
-                                </div>
-                                <div className="height3">
-                                    <Typography variant="body2">
-                                        {"Username"}
-                                    </Typography>
-                                    <TextField className="wid" id="outlined-basic" type="text" variant="outlined" required />
-                                </div>
-                                <div className="height3">
-                                    <Typography variant="body2">
-                                        {"Password"}
-                                    </Typography>
-                                    <TextField className="wid" id="outlined-basic" type="text" variant="outlined" required />
-                                </div>
-                                <Button className="wid" type='submit' variant="contained">{"Submit"}</Button>
-                            </CardContent>
-                        </Card>
 
-                        {/* # Sub Grid at Base of Card */}
-                        <Grid container direction="row">
-                            <Grid item xs={6} md={5}>
-                                <Typography variant="body2">
-                                    {"Don't have an account?"}
-                                </Typography>
+                <Grid item xs={10} md={4}>
+                    <Grid container direction="column" spacing={3}>
+                        <div className="card-height">
+                            <Card>
+                                <CardContent>
+                                    <div className="bottom-margin">
+                                        <Typography variant="h4" component="div">
+                                            {"Sign In"}
+                                        </Typography>
+                                    </div>
+                                    <div className="bottom-margin">
+                                        <Typography variant="body2">
+                                            {"Username"}
+                                        </Typography>
+                                        <TextField className="full-width" id="outlined-basic" type="text" variant="outlined" required />
+                                    </div>
+                                    <div className="bottom-margin">
+                                        <Typography variant="body2">
+                                            {"Password"}
+                                        </Typography>
+                                        <TextField className="full-width" id="outlined-basic" type="text" variant="outlined" required />
+                                    </div>
+                                    <Button className="full-width" type='submit' variant="contained">{"Submit"}</Button>
+                                </CardContent>
+                            </Card>
+
+                            {/* # SUB GRID AT BASE OF CARD */}
+                            <Grid container direction="row" className="sub-row-height">
+                                <Grid item xs={6} md={5}>
+                                    <Typography variant="body2">
+                                        {"Don't have an account?"}
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={4} md={4}>
+                                    <Link href="/signup" color="primary">{"Sign Up"}</Link>
+                                </Grid>
+                                <Grid item xs={2} md={3} />
                             </Grid>
-                            <Grid item xs={4} md={4}>
-                                <Link href="/signup" color="primary">{"Sign Up"}</Link>
-                            </Grid>
-                            <Grid item xs={2} md={3}>
-                                <br></br>
-                            </Grid>
-                        </Grid>
-                    </div>
+                        </div>
+                    </Grid>
                 </Grid>
-
                 <Grid item xs={1} md={1} />
             </Grid>
         </div>
